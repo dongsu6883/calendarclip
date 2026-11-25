@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendar Clip</title>
+<meta name="application-name" content="Calendar Clip">
+<meta name="description" content="Calendar Clip은 선택한 문장에서 일정을 읽어 내 Google 캘린더에 등록하는 Windows PC용 무료 앱입니다.">
+<meta property="og:site_name" content="Calendar Clip">
+<meta property="og:title" content="Calendar Clip">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calendarclip.nowdaylab.com/">
+<meta property="og:description" content="선택한 문장에서 일정을 읽어 내 Google 캘린더에 등록하는 Windows PC용 무료 앱">
+<style>
+  :root { --ink:#1d2433; --muted:#5b6475; --line:#e3e7ee; --accent:#2563eb; --bg:#f7f9fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif; color:var(--ink); background:#fff; line-height:1.7; }
+  header { border-bottom:1px solid var(--line); }
+  .wrap { max-width:760px; margin:0 auto; padding:0 20px; }
+  .top { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .brand { font-weight:700; font-size:18px; color:var(--ink); text-decoration:none; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:15px; }
+  .hero { padding:56px 0 40px; }
+  h1 { font-size:40px; margin:0 0 8px; letter-spacing:-0.5px; }
+  .tag { font-size:19px; color:var(--muted); margin:0 0 24px; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; padding:12px 22px; border-radius:8px; text-decoration:none; font-weight:600; }
+  .note { font-size:14px; color:var(--muted); margin-top:10px; }
+  section { padding:28px 0; border-top:1px solid var(--line); }
+  h2 { font-size:22px; margin:0 0 12px; }
+  ul, ol { padding-left:22px; margin:0; }
+  li { margin:4px 0; }
+  .box { background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:18px 20px; }
+  code { background:var(--bg); padding:1px 6px; border-radius:4px; font-size:14px; word-break:break-all; }
+  footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--muted); font-size:14px; }
+  footer a { color:var(--muted); }
+  .en p, .en li { color:#333; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <a class="brand" href="/">Calendar Clip</a>
+    <nav><a href="#download">다운로드</a><a href="/privacy.html">개인정보처리방침</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Calendar Clip</h1>
+    <p class="tag">문장 하나 선택하고 단축키 한 번이면, 내 Google 캘린더에 일정이 등록됩니다.</p>
+    <a class="btn" href="#download">무료 다운로드 (Windows)</a>
+    <p class="note">회원가입 없음 · 무료 · Windows PC 전용</p>
+  </div>
+
+  <section>
+    <h2>Calendar Clip은 어떤 앱인가요?</h2>
+    <p>Calendar Clip은 Windows PC용 무료 앱입니다. 메일·메신저 등에서 일정이 적힌 문장(예: "다음주 화요일 3시 회의")을 선택하거나 복사한 뒤 <b>Ctrl + Alt + Space</b>를 누르면, 앱이 문맥을 읽어 일정 제목과 날짜·시간을 자동으로 인식합니다. 사용자는 내용을 확인하고 [등록] 버튼만 누르면 본인의 Google 캘린더에 일정이 추가됩니다.</p>
+  </section>
+
+  <section>
+    <h2>주요 기능</h2>
+    <ul>
+      <li>Ctrl + Alt + Space 단축키로 어디서든 바로 실행</li>
+      <li>문장의 문맥을 읽어 일정 제목, 날짜, 시간을 자동 인식</li>
+      <li>[등록] 버튼 한 번으로 Google 캘린더에 일정 추가 (등록 전 수정 가능)</li>
+      <li>월간 보기로 일정 확인, 중복·겹치는 일정 알림</li>
+      <li>본인이 소유한 캘린더의 일정 수정</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>사용 방법</h2>
+    <ol>
+      <li>설치 파일을 내려받아 설치하고 실행합니다.</li>
+      <li>[Google 계정 연결]을 눌러 본인 Google 계정으로 로그인하고 권한을 허용합니다. (처음 한 번만)</li>
+      <li>일정이 적힌 문장을 선택하거나 복사합니다.</li>
+      <li>Ctrl + Alt + Space를 누르면 인식된 일정 제목과 날짜·시간이 표시됩니다.</li>
+      <li>내용을 확인하고 [등록]을 누르면 Google 캘린더에 일정이 추가됩니다.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Google 캘린더 데이터를 사용하는 방식</h2>
+    <div class="box">
+      <p>Calendar Clip은 Google 권한 <code>https://www.googleapis.com/auth/calendar.events.owned</code> 하나만 요청합니다. 이 권한은 사용자가 소유한 캘린더의 일정에만 접근하며, 다른 사람이 공유한 캘린더나 연락처·메일 등에는 접근하지 않습니다.</p>
+      <ul>
+        <li><b>사용 목적</b>: 사용자가 선택한 문장으로 일정을 등록하고, 등록한 일정을 확인·수정하기 위해서입니다.</li>
+        <li><b>사용 시점</b>: 사용자가 [등록] 또는 수정 버튼을 눌렀을 때와 월간 보기를 열었을 때만 Google 캘린더와 직접 통신합니다. 일정은 삭제하지 않습니다.</li>
+        <li><b>저장 위치</b>: 데이터는 개발자 서버로 전송되거나 저장되지 않습니다. 로그인 토큰은 Windows 데이터 보호(DPAPI)로 암호화해 사용자 PC에 저장합니다.</li>
+        <li>Google에서 받은 데이터를 광고, 판매, 제3자 제공에 사용하지 않습니다.</li>
+        <li>Calendar Clip은 이미지를 생성하거나 편집하지 않으며, Google 사용자 데이터를 AI 이미지 생성이나 AI 모델 학습에 사용하지 않습니다.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>광고 안내</h2>
+    <p>앱 화면 하단에 쿠팡 파트너스 광고 배너가 표시됩니다. 광고 제공자는 쿠키를 사용할 수 있습니다. 이 배너에는 Google 캘린더 데이터가 전달되지 않습니다.</p>
+  </section>
+
+  <section id="download">
+    <h2>다운로드</h2>
+    <p>지원 환경: Windows PC</p>
+    <a class="btn" href="https://nowdaylab.com/pages/calendar-clip">설치 파일 받기 (CalendarClip-Setup-1.0.0.exe)</a>
+  </section>
+
+  <section class="en" lang="en">
+    <h2>About Calendar Clip (English)</h2>
+    <p>Calendar Clip is a free Windows desktop app. The user selects or copies a sentence such as "Meeting next Tuesday at 3 PM" and presses Ctrl + Alt + Space. The app reads the context, detects the event title, date and time, and after the user reviews it and clicks [Add], adds the event to the user's own Google Calendar.</p>
+    <p><b>Google user data:</b> The app requests only one scope, <code>https://www.googleapis.com/auth/calendar.events.owned</code>, used solely to read, create and update events on calendars the user owns. It communicates directly with Google Calendar only when the user acts. No calendar data is sent to or stored on the developer's servers. The sign-in token is encrypted with Windows DPAPI on the user's PC. Google user data is never sold, used for advertising, or shared with third parties.</p>
+    <p>Calendar Clip does not generate or edit images, and does not use Google user data for AI image generation or AI model training.</p>
+    <p><b>Advertising:</b> A Coupang Partners banner is shown at the bottom of the app. The banner does not receive any Google user data.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Calendar Clip · 개발자 DSooooo · 문의 <a href="mailto:dongsu6884@gmail.com">dongsu6884@gmail.com</a></p>
+    <p><a href="/privacy.html">개인정보처리방침 (Privacy Policy)</a></p>
+  </div>
+</footer>
+</body>
+</html>
