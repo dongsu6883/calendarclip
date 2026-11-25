@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendar Clip 개인정보처리방침 (Privacy Policy)</title>
+<meta name="application-name" content="Calendar Clip">
+<meta property="og:site_name" content="Calendar Clip">
+<meta property="og:title" content="Calendar Clip 개인정보처리방침">
+<style>
+  :root { --ink:#1d2433; --muted:#5b6475; --line:#e3e7ee; --bg:#f7f9fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif; color:var(--ink); line-height:1.75; }
+  header { border-bottom:1px solid var(--line); }
+  .wrap { max-width:760px; margin:0 auto; padding:0 20px; }
+  .top { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .brand { font-weight:700; font-size:18px; color:var(--ink); text-decoration:none; }
+  nav a { color:var(--muted); text-decoration:none; font-size:15px; }
+  h1 { font-size:30px; margin:40px 0 6px; }
+  .date { color:var(--muted); font-size:14px; margin:0 0 24px; }
+  h2 { font-size:20px; margin:32px 0 10px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--bg); }
+  .box { background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:16px 20px; }
+  code { background:var(--bg); padding:1px 6px; border-radius:4px; font-size:14px; word-break:break-all; }
+  ul { padding-left:22px; }
+  hr { border:0; border-top:1px solid var(--line); margin:48px 0 0; }
+  footer { padding:24px 0 40px; color:var(--muted); font-size:14px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <a class="brand" href="/">Calendar Clip</a>
+    <nav><a href="/">홈</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Calendar Clip 개인정보처리방침</h1>
+  <p class="date">시행일: 2026-11-26 · 최종 수정: 2026-11-26</p>
+
+  <div class="box">
+    <p>Calendar Clip은 사용자가 선택하거나 복사한 일정 문장을 내 PC에서 분석해 사용자의 Google 캘린더에 등록하는 Windows 프로그램입니다. Google 계정 정보와 캘린더 내용은 사용자 PC와 Google 사이에서만 오가며, 운영자의 서버로 보내지지 않습니다. Google 사용자 데이터는 광고에 사용하거나 다른 사람에게 판매·제공하지 않습니다.</p>
+  </div>
+
+  <h2>1. 처리하는 정보와 목적</h2>
+  <table>
+    <tr><th>정보</th><th>목적</th><th>저장 위치</th></tr>
+    <tr><td>사용자가 복사하거나 입력한 일정 문장</td><td>날짜·시간·제목을 추출해 일정 초안 작성</td><td>PC 메모리에서만 처리. '나중에 등록'을 누른 경우에만 사용자 PC에 저장</td></tr>
+    <tr><td>Google 캘린더 일정 (제목, 시작·종료 시각, 색상, 참석자 유무, 바쁨/한가함 표시, Calendar Clip이 붙인 분류 값)</td><td>월간 보기 표시, 중복·겹치는 일정 확인, 일정 등록·변경</td><td>Google 서버. 프로그램 실행 중 PC 메모리에서만 사용</td></tr>
+    <tr><td>Google 로그인 토큰</td><td>매번 다시 로그인하지 않고 캘린더에 연결</td><td>사용자 PC (Windows 계정 단위로 암호화)</td></tr>
+    <tr><td>앱 설정 (분류 목록 등)</td><td>사용자 환경 유지</td><td>사용자 PC</td></tr>
+  </table>
+  <p>Calendar Clip은 클립보드를 상시 감시하지 않습니다. 사용자가 단축키(Ctrl + Alt + Space)를 누르거나 직접 붙여 넣을 때만 클립보드 텍스트를 읽습니다. 회원가입이 없으며, 이름·전화번호·이메일 주소 등을 따로 수집하지 않습니다.</p>
+
+  <h2>2. Google 사용자 데이터의 접근과 사용</h2>
+  <p>Calendar Clip은 Google 계정 연결 시 다음 한 가지 권한만 요청합니다.</p>
+  <p><code>https://www.googleapis.com/auth/calendar.events.owned</code> — 사용자가 소유한 캘린더의 일정 보기, 만들기, 변경</p>
+  <p>이 권한은 사용자의 기본 캘린더에서 다음 작업에만 사용합니다.</p>
+  <ul>
+    <li>사용자가 'Google에 등록'을 눌렀을 때 새 일정 만들기</li>
+    <li>사용자가 '일정 변경'을 선택했을 때 기존 일정의 시간·제목·분류 바꾸기</li>
+    <li>월간 보기와 중복·겹침 확인을 위해 해당 기간의 일정 읽기</li>
+  </ul>
+  <p>Calendar Clip은 일정을 삭제하지 않으며, 사용자가 확인하지 않은 일정을 자동으로 등록하거나 변경하지 않습니다. 참석자가 있는 일정을 변경하면 Google 캘린더가 참석자에게 변경 알림을 보낼 수 있습니다.</p>
+  <p>Calendar Clip의 Google API로부터 받은 정보의 사용 및 다른 앱으로의 전송은 Google API 서비스 사용자 데이터 정책(제한적 사용 요건 포함)을 준수합니다.</p>
+  <ul>
+    <li>Google 사용자 데이터는 위에 적은 사용자용 기능에만 사용합니다.</li>
+    <li>Google 사용자 데이터를 운영자 서버나 제3자에게 전송, 판매, 제공하지 않습니다.</li>
+    <li>Google 사용자 데이터를 광고(맞춤형 광고, 리타기팅 포함)에 사용하지 않습니다.</li>
+    <li>운영자를 포함한 어떤 사람도 사용자의 캘린더 내용을 열람하지 않습니다.</li>
+    <li>Google 사용자 데이터를 AI·머신러닝 모델 학습이나 AI 이미지 생성에 사용하지 않습니다.</li>
+  </ul>
+
+  <h2>3. 광고</h2>
+  <p>Calendar Clip 창 하단에는 쿠팡 파트너스 광고 배너가 표시되며, 이 배너를 통한 구매 시 운영자가 일정액의 수수료를 받을 수 있습니다. 배너는 쿠팡(ads-partners.coupang.com)의 웹 콘텐츠로 불러오며, 쿠팡은 자체 정책에 따라 쿠키·기기 정보·클릭 정보를 처리할 수 있습니다. 광고에는 사용자의 일정 문장, 캘린더 내용, Google 계정 정보가 전달되지 않습니다.</p>
+
+  <h2>4. 보관 기간과 삭제</h2>
+  <ul>
+    <li>프로그램의 연결 해제 기능을 사용하면 PC에 저장된 로그인 토큰과 Google 대기 목록이 즉시 삭제됩니다.</li>
+    <li>Google 계정 쪽 권한은 Google 계정 &gt; 타사 앱 및 서비스(myaccount.google.com/permissions)에서 언제든 철회할 수 있습니다.</li>
+    <li>프로그램을 삭제한 뒤 <code>%LOCALAPPDATA%\CalendarClip</code> 폴더를 지우면 PC에 남은 모든 데이터가 삭제됩니다.</li>
+    <li>Calendar Clip으로 등록한 일정은 사용자의 Google 캘린더에 남으며, Google 캘린더에서 직접 관리할 수 있습니다.</li>
+  </ul>
+
+  <h2>5. 제3자 제공 및 처리 위탁</h2>
+  <p>운영자는 사용자의 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다. 일정 데이터는 사용자의 PC와 Google LLC 사이에서 직접 전송되며, Google의 처리는 Google 개인정보처리방침을 따릅니다.</p>
+
+  <h2>6. 안전성 확보 조치</h2>
+  <ul>
+    <li>Google과의 통신은 모두 HTTPS로 암호화됩니다.</li>
+    <li>로그인은 Google 공식 로그인 화면에서 진행되며, 프로그램은 비밀번호를 받지 않습니다 (OAuth 2.0 + PKCE).</li>
+    <li>로그인 토큰은 Windows 데이터 보호(DPAPI)로 암호화해 현재 Windows 사용자만 읽을 수 있게 저장합니다.</li>
+  </ul>
+
+  <h2>7. 이용자의 권리</h2>
+  <p>이용자는 언제든 연결 해제, Google 권한 철회, 로컬 데이터 삭제를 통해 개인정보 처리를 중단할 수 있습니다. 운영자는 이용자의 데이터를 보관하지 않으므로, 열람·정정·삭제는 위 방법과 Google 캘린더에서 직접 할 수 있습니다.</p>
+
+  <h2>8. 아동의 개인정보</h2>
+  <p>Calendar Clip은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 처리하지 않습니다.</p>
+
+  <h2>9. 개인정보 보호책임자 및 문의</h2>
+  <ul>
+    <li>운영자 및 개인정보 보호책임자: DSooooo</li>
+    <li>이메일: <a href="mailto:dongsu6884@gmail.com">dongsu6884@gmail.com</a></li>
+    <li>개인정보 침해 신고·상담: 개인정보침해신고센터 (privacy.kisa.or.kr, 국번 없이 118)</li>
+  </ul>
+
+  <h2>10. 방침의 변경</h2>
+  <p>이 방침이 바뀌면 시행일 7일 전부터 이 페이지에 공지합니다. Google 사용자 데이터의 사용 방식이 바뀌는 경우 프로그램 안에서도 알리고 다시 동의를 받습니다.</p>
+
+  <hr>
+  <section lang="en">
+    <h1>Calendar Clip Privacy Policy</h1>
+    <p class="date">Effective: 2026-11-26</p>
+    <p>Calendar Clip is a Windows desktop app that reads a schedule sentence the user selects or copies, parses it on the user's PC, and adds or updates the event in the user's own Google Calendar. Calendar Clip has no server: Google account data and calendar data travel only between the user's PC and Google.</p>
+    <h2>Data accessed and why</h2>
+    <ul>
+      <li>Scope requested: <code>https://www.googleapis.com/auth/calendar.events.owned</code> only.</li>
+      <li>Calendar events (title, start/end, color, whether guests exist, free/busy, and a private category tag set by Calendar Clip) in the user's primary calendar are read to show the month view and to detect duplicate or overlapping events.</li>
+      <li>Events are created or updated only after the user reviews the parsed result and clicks the save button. Calendar Clip never deletes events.</li>
+      <li>Clipboard text is read only when the user presses the hotkey or pastes manually, and is parsed locally.</li>
+      <li>The OAuth refresh token is stored on the user's PC, encrypted with Windows DPAPI.</li>
+    </ul>
+    <h2>Limited Use</h2>
+    <p>Calendar Clip's use and transfer of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements. Google user data is used only to provide the user-facing features described above. It is never sent to the developer or any third party, never sold, never used for advertising (including retargeting or personalized ads), never read by humans, and never used to train AI or machine learning models or to generate AI images.</p>
+    <h2>Advertising</h2>
+    <p>The app window shows a Coupang Partners affiliate banner loaded from ads-partners.coupang.com. Coupang may use cookies and device or click information under its own policy. No Google user data, calendar content, or clipboard text is passed to the banner or to Coupang.</p>
+    <h2>Retention and deletion</h2>
+    <p>Using "Disconnect" in the app deletes the stored token and pending Google drafts from the PC immediately. Users can revoke access at any time at myaccount.google.com/permissions, and can delete all local data by removing the <code>%LOCALAPPDATA%\CalendarClip</code> folder. Events created in Google Calendar remain in the user's calendar under the user's control.</p>
+    <h2>Sharing</h2>
+    <p>We do not share, sell, or transfer personal data to anyone.</p>
+    <h2>Contact</h2>
+    <p>DSooooo · <a href="mailto:dongsu6884@gmail.com">dongsu6884@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><p><a href="/">Calendar Clip 홈</a></p></div>
+</footer>
+</body>
+</html>
